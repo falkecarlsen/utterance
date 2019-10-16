@@ -44,3 +44,6 @@ To list all available words or phrases, pass argument `--avail`.
 utter --avail
 ```
 To list all used words or phrases, pass argument `--used`.
+```
+utter --used
+```
