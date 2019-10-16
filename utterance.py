@@ -53,9 +53,6 @@ def remove(arg: str):
     if check_if_used(arg):
         print(f'Error: {type} \'{arg}\' is already used!')
         exit(1)
-    if not check_if_available(arg):
-        print(f'Could not find {type} \'{arg}\' in available {type}s, adding...')
-        add(arg)
 
     with open(used_path, 'a') as used:
         used.write(f'{arg.lower()}\n')
